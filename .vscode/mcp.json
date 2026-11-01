@@ -1,0 +1,33 @@
+
+{
+  "inputs": [
+    {
+      "id": "dev-mock-user-one-token",
+      "type": "promptString",
+      "description": "Bearer token for dev_mock_user_1",
+      "password": true
+    },
+    {
+      "id": "dev-mock-user-two-token",
+      "type": "promptString",
+      "description": "Bearer token for dev_mock_user_2",
+      "password": true
+    }
+  ],
+  "servers": {
+    "smart-daily-assistant": {
+      "type": "http",
+      "url": "http://127.0.0.1:8000/mcp",
+      "headers": {
+        "Authorization": "Bearer ${input:dev-mock-user-one-token}"
+      }
+    },
+    "smart-daily-assistant-user-two": {
+      "type": "http",
+      "url": "http://127.0.0.1:8000/mcp",
+      "headers": {
+        "Authorization": "Bearer ${input:dev-mock-user-two-token}"
+      }
+    }
+  }
+}
