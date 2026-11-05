@@ -109,3 +109,5 @@ tests/                     Unit and in-process MCP integration tests
 .vscode/mcp.json           Local VS Code MCP entries for both dev users
 .env.example               Environment variable template; contains no secrets
 ```
+
+[![M8ven Score](https://m8ven.ai/badge/mcp/haloween-arch-smart-assistant-7dxeh9?v=41175ea22cc324417ebcbe27b6cf6cb1)](https://m8ven.ai/mcp/haloween-arch-smart-assistant-7dxeh9?s=readme)
